@@ -1,5 +1,7 @@
 #include "kernels.cuh"
 
+#include <cuda_runtime_api.h>
+
 #include <algorithm>
 #include <cmath>
 

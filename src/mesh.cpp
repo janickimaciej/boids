@@ -45,7 +45,6 @@ void Mesh::createEBO(const std::vector<unsigned int>& indices)
 void Mesh::createVAO()
 {
 	glGenVertexArrays(1, &m_VAO);
-
 	glBindVertexArray(m_VAO);
 
 	glBindBuffer(GL_ARRAY_BUFFER, m_VBO);

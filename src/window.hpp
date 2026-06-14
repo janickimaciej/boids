@@ -18,19 +18,13 @@ public:
 	void pollEvents() const;
 
 private:
-	static const glm::ivec2 m_initialSize;
+	static const glm::ivec2 m_size;
 
 	GLFWwindow* m_windowPtr{};
-	glm::ivec2 m_viewportSize = m_initialSize;
 	Scene* m_scene{};
 
-	void resizeCallback(int width, int height);
 	void cursorMovementCallback(double x, double y);
 	void keyCallback(int key, int, int action, int);
-
-	void updateViewport() const;
-	glm::vec2 getCursorPos() const;
-	bool isKeyPressed(int key);
 
 	template <typename Callback, Callback callback, typename... Args>
 	static void callbackWrapper(GLFWwindow* windowPtr, Args... args);

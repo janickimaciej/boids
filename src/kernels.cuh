@@ -1,6 +1,5 @@
 #pragma once
 
-#include <cuda_runtime_api.h>
 #include <glm/glm.hpp>
 
 #include "boids.hpp"
